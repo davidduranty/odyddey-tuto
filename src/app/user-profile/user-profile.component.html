@@ -1,0 +1,11 @@
+<div>
+  <img [src]="user.photo" alt="user.name" />
+  <h1>
+    {{ user.firstName }}
+    {{ user.name }}
+  </h1>
+  <p *ngIf="showAge">Age: {{ user.age }}</p>
+  <input [(ngModel)]="user.quote" placeholder="Enter your quote" />
+  <p>{{ user.quote }}</p>
+  <button (click)="toggleAge()">Toggle Age</button>
+</div>
